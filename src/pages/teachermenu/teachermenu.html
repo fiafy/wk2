@@ -1,0 +1,52 @@
+<!--
+  Generated template for the TeachermenuPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>เมนูผู้ดูแลระบบ</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <ion-card text-center padding>
+          <ion-item id="index" (click)="Information()">
+            <img src="http://localhost/image/books.png" />
+          </ion-item>
+          <p>ข้อมูลนักเรียน</p>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card text-center padding>
+          <ion-item id="index" (click)="Publicize()">
+            <img src="http://localhost/image/protest.png" />
+          </ion-item>
+          <p>ประชาสัมพันธ์</p>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card text-center padding>
+          <ion-item id="index" (click)="Thactivitynews()">
+            <img src="http://localhost/image/campaign.png" />
+          </ion-item>
+          <p>ข่าวกิจกรรม</p>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6>
+        <ion-card text-center padding>
+          <ion-item id="index" (click)="viewKarnrean()">
+            <img src="http://localhost/image/ca.png" />
+          </ion-item>
+          <p>ปฏิทินวิชาการ</p>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <button ion-button full (click)="logout()">ออกจากระบบ</button>
+</ion-content>

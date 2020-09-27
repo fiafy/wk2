@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>เพิ่มแผนการเรียนภาคเรียนที่ 1</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>รห้สวิชา</ion-label>
+      <ion-input type="text" [(ngModel)]="course_code"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>รายวิชา</ion-label>
+      <ion-input type="text" [(ngModel)]="course"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>หน่วยกิต</ion-label>
+      <ion-input type="text" [(ngModel)]="credit"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button full (click)=" Addstudyplan(course_code, course, credit)">
+    เพิ่มแผนการเรียน
+  </button>
+</ion-content>

@@ -1,0 +1,36 @@
+<!--
+  Generated template for the AddactivitynewsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>ข่าวกิจกรรม</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>หัวข้อข่าว</ion-label>
+      <ion-input type="text" [(ngModel)]="head_activity"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>รายละเอียด</ion-label>
+      <ion-input type="text" [(ngModel)]="description"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>วันที่ลงประกาศ</ion-label>
+      <ion-datetime
+        displayFormat="DD/MMMM/YYYY"
+        [(ngModel)]="date"
+      ></ion-datetime>
+    </ion-item>
+  </ion-list>
+  <button ion-button full (click)="Addactivity(head_activity,description,date)">
+    เพิ่มประกาศ
+  </button>
+</ion-content>

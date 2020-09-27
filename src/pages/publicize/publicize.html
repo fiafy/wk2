@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons start>
+      <button ion-button icon-only color (click)="Add()">
+        <ion-icon name="md-add"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>ข่าวประชาสัมพันธ์</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let item of rowsNews">
+    <ion-item>
+      <h2>หัวข้อข่าว : {{item.head_news}}</h2>
+      <h2>รายละเอียด : {{item.description}}</h2>
+      <h2>วันที่ลงประกาศ : {{item.date}}</h2>
+      <button
+        ion-button
+        (click)="btupdate(item.id,item.head_news,item.description,item.date)"
+      >
+        <ion-icon name="create"></ion-icon>&nbsp; แก้ไข
+      </button>
+      <button ion-button (click)="Delete(item.id)">
+        <ion-icon name="md-trash"></ion-icon>&nbsp; ลบ
+      </button>
+    </ion-item>
+  </ion-card>
+</ion-content>

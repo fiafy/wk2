@@ -1,0 +1,52 @@
+<!--
+  Generated template for the StudentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>เข้าสู่ระบบ</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <hr />
+  <h3 align="center">ชื่อ นายอานันดา ดอเลาะ</h3>
+  <p align="center">ชั้นมัธยมศึกษาปี่ที่ 1</p>
+  <hr />
+  <ion-list>
+    <ion-item id="student" (click)="Showstudyplanone()">
+      <ion-thumbnail item-start>
+        <img src="http://localhost/image/listt.png" />
+      </ion-thumbnail>
+      <h2>แผนการเรียน</h2>
+      <p>เรียกดูแผนการเรียน</p>
+    </ion-item>
+
+    <ion-item id="student" (click)="Checkstudy()">
+      <ion-thumbnail item-start>
+        <img src="http://localhost/image/calendar.png" />
+      </ion-thumbnail>
+      <h2>ตารางเรียน</h2>
+      <p>เรียกดูตารางเรียน</p>
+    </ion-item>
+
+    <ion-item id="student" (click)="SaveSick()">
+      <ion-thumbnail item-start>
+        <img src="http://localhost/image/examm.png" />
+      </ion-thumbnail>
+      <h2>ผลการเรียน</h2>
+      <p>เรียกดูผลการเรียน</p>
+    </ion-item>
+
+    <ion-item id="student" (click)="Studentview()">
+      <ion-thumbnail item-start>
+        <img src="http://localhost/image/keys.png" />
+      </ion-thumbnail>
+      <h2>แบบจำลองคำนวณผลการเรียน</h2>
+      <p>เรียกดูแบบจำลอง</p>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button full (click)="logout()">ออกจากระบบ</button>
+</ion-content>

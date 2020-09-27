@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>เพิ่มข่าวสารประชาสัมพันธ์</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>หัวข้อข่าว</ion-label>
+      <ion-input type="text" [(ngModel)]="head_news"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>รายละเอียด</ion-label>
+      <ion-input type="text" [(ngModel)]="description"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>วันที่ลงประกาศ</ion-label>
+      <ion-datetime
+        displayFormat="DD/MMMM/YYYY"
+        [(ngModel)]="date"
+      ></ion-datetime>
+    </ion-item>
+  </ion-list>
+  <button ion-button full (click)="AddNews(head_news,description,date)">
+    เพิ่มประกาศ
+  </button>
+</ion-content>
